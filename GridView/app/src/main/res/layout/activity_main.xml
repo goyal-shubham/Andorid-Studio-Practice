@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.scu.sgoyal.gridview.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#ff0000ff"
+        android:textColor="#ffffffff"
+        android:text="Scroll Screen! Tap to choose. "
+        android:id="@+id/textView" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
+        android:columnWidth="100dp"
+        android:layout_below="@+id/textView"
+        android:stretchMode="columnWidth" />
+
+
+</LinearLayout>
